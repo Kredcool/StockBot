@@ -65,7 +65,6 @@ while True:
     print("Bot Money:", bot.money)
 
     # updating stock prices
-    # try:
     latestUberPrice = uberStock.history(period="1d")["Close"][0]
     latestAmazonStock = amazonStock.history(period="1d")["Close"][0]
     latestMicrosoftStock = microsoftStock.history(period="1d")["Close"][0]
@@ -75,5 +74,4 @@ while True:
     latestHersheyStock = hersheyStock.history(period="1d")["Close"][0]
     latestGeneralMotorsStock = generalMotorsStock.history(period="1d")["Close"][0]
     latestTargetStock = targetStock.history(period="1d")["Close"][0]
-    # except:
-    #     pass
+    time.sleep(60)
